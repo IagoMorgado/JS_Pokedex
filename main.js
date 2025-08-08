@@ -28,8 +28,16 @@ const createPokemonCard=(pokemon)=>{
         <h3 class="name">${name}</h3>
         <small class="type">Type:<span>${type}</span></small>
     </div>
+    <div>
+        <button type="button">Detalhes</button>
+    </div>
     `;
     pokemonEl.innerHTML=pokeInnerHTML;
     poke_container.appendChild(pokemonEl);
 }
+
+const openPokemonDetail=(pokemon)=>{
+
+}
+
 fetchPokemons();
